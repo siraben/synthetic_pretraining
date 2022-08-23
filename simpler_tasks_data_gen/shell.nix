@@ -3,8 +3,8 @@ let
     url = "https://github.com/DavHau/mach-nix";
     ref = "refs/tags/3.5.0";
   }) {
-    pypiDataRev = "f014c49221a49dae6f4c5f72b51b8b8486dbf326";
-    pypiDataSha256 = "sha256:1fslbylgawk00hnvrl4lysn1wb67pr3ik8g6lla0afq7krgpgvcv";
+    pypiDataRev = "4bcaf526de8cbcad2c1eb3bc0160363ce370086b";
+    pypiDataSha256 = "sha256:1x4ds63dcg975vrirnwhmxh68zfivbxdasg37fdk7iiy8nv12hin";
   };
 in
 
@@ -16,6 +16,6 @@ mach-nix.mkPythonShell rec {
   ];
   providers = {
     # disallow wheels by default
-    _default = "wheel,nixpkgs,sdist";
+    _default = "sdist,wheel,nixpkgs";
   };
 }
